@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}
+Projects Page
+{% endblock %}
+{% block content %}
+<h1 class="project-head">Python Projects...</h1>
+<table class="youtube">
+    <tr>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=kqtD5dpn9C8"><button class="btn">Make A Digital Clock</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=gfDE2a7MKjA"><button class="btn">Remake Flappy Bird</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=F5mRW0jo-U4"><button class="btn">Make Jarvis Of Your Own</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=JxzZxdht-XY"><button class="btn">Make Snake Game</button> </a> </th>
+    </tr>
+</table>
+{% endblock %}
+{% block css %}
+<style>
+.project-head{
+    font-family: monospace;
+}
+
+.btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.youtube{
+    padding: 10px;
+}
+</style>
+{% endblock %}

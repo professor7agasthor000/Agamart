@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+<div class="main-body">
+    <h2 class="property-list">Find The Perfect Course You Want For Many Programming Languages</h2>
+        <h2 class="property-list">Get Practise Projects</h2>
+    <h2 class="property-list">Learn Object-Oriented Programming</h2>
+    <h2 class="property-list">Learn Web Development</h2>
+    <h2 class="property-list">Learn Ethical Hacking</h2>
+    <h2 class="property-list">For Free</h2>
+    <h2 class="property-list">Courses currently available :</h2>
+    <ul class="courses">
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Html, Css, Js</li>
+        <li>Django</li>
+    </ul>
+    <h2 class="property-list">Click On Courses...</h2>
+</div>
+{% endblock %}
+{% block css %}
+<style>
+.main-body{
+    font-family: Raleway;
+}
+
+.property-list{
+    text-align: center;
+    font-size: 25px;
+    padding: 8px;
+}
+
+li{
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+}
+
+.courses{
+    list-style-type: none;
+}
+</style>
+{% endblock %}

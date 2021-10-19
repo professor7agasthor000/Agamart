@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div class="nav-div">
+    <nav style="padding: 14px;">
+        <a class="banner" href="#">YT-courses</a>
+        <a class="tabs" href="{{ url_for ('home_dark') }}">Home</a>
+        <a class="tabs" href="{{ url_for ('courses_dark') }}">Courses</a>
+        <a class="tabs" href="{{ url_for ('project_dark') }}">Projects</a>
+        <a class="tabs" href="{{ url_for ('about_dark') }}">About</a>
+        <a class="tabs" href="{{ url_for ('sign_in_dark') }}">Sign In</a>
+        <a class="tabs" href="{{ url_for ('login_dark') }}">Login</a>
+        <a class="theme" href="{{ url_for ('hello_world') }}">Light mode</a>
+    </nav>
+</div>
+{% block content %}
+{% endblock %}
+</body>
+{% block css %}
+{% endblock %}
+<style>
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+
+.nav-div{
+    background-color: #C1C1C1;
+}
+
+.banner{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 23px;
+    color: black;
+    font-weight: heavy;
+    font-family: monospace;
+}
+
+.tabs{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    font-family: monospace;
+    opacity: 50%;
+    transition: 0.2s;
+}
+
+.tabs:hover{
+    opacity: 90%;
+}
+
+.theme{
+    color: white;
+    margin-left: 1090px;
+    font-size: 20px;
+    font-family: monospace;
+    text-decoration: none;
+}
+</style>
+</html>

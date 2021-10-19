@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}
+Sign-in
+{% endblock %}
+{% block content %}
+<form action="#" method="post" class="login">
+    <h1 class="head-login">Sign In</h1>
+    <input type="text" class="username" name="name" placeholder="Username" />
+    <br>
+    <br>
+    <input type="text" class="username" placeholder="Email" />
+    <br>
+    <br>
+    <input type="password" class="username" placeholder="Password" />
+    <br>
+    <br>
+    <input type="submit" value="Sign-in" class="sub-login" />
+</form>
+{% endblock %}
+{% block css %}
+<style>
+    .login{
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .head-login{
+        font-family: monospace
+    }
+
+    .username{
+        font-size: 20px;
+    }
+
+    .sub-login{
+        font-size: 16px;
+        padding: 8px;
+        display: inline-block;
+        border-color: white;
+    }
+
+    .sub-login:hover{
+        cursor: pointer;
+        shadow: 10px;
+        background-opacity: 0.85;
+        opacity: 80%;
+    }
+</style>
+{% endblock %}

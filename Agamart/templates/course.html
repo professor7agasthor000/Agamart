@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block title %}
+Courses Page
+{% endblock %}
+
+{% block content %}
+<h1 class="course-head">All Python courses...</h1>
+<table class="youtube">
+    <tr>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=kqtD5dpn9C8"><button class="btn">Python Beginners (English)</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=gfDE2a7MKjA"><button class="btn">Python Beginners (Hindi)</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=F5mRW0jo-U4"><button class="btn">Python Django Beginners (English)</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=JxzZxdht-XY"><button class="btn">Python Django Beginners (Hindi)</button> </a> </th>
+    </tr>
+</table>
+
+<h1 class="course-head">All Java courses...</h1>
+<table class="youtube">
+    <tr>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=eIrMbAQSU34"><button class="btn">Java Beginners (English)</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=UmnCZ7-9yDY"><button class="btn">Java Beginners (Hindi)</button> </a> </th>
+    </tr>
+</table>
+
+<h1 class="course-head">All C++ courses...</h1>
+<table class="youtube">
+    <tr>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=vLnPwxZdW4Y"><button class="btn">C++ Beginners (English)</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=yGB9jhsEsr8"><button class="btn">C++ Beginners (Hindi)</button> </a> </th>
+    </tr>
+</table>
+
+<h1 class="course-head">All Html, Css, Js courses...</h1>
+<table class="youtube">
+    <tr>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=qz0aGYrrlhU"><button class="btn">Html Beginners (English)</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=yfoY53QXEnI"><button class="btn">Css Beginners (English)</button> </a> </th>
+        <th><a target=”blank” href="https://www.youtube.com/watch?v=W6NZfCO5SIk"><button class="btn">Java Script Beginners (English)</button> </a> </th>
+    </tr>
+</table>
+
+<h1 class="course-head">All GitHub courses...</h1>
+<table class="youtube">
+    <tr>
+        <th><a target=”blank” href="#"><button class="btn">GitHub Beginners (English)</button> </a> </th>
+        <th><a target=”blank” href="#"><button class="btn">GitHub Beginners (Hindi)</button> </a> </th>
+    </tr>
+</table>
+
+<h1 class="course-head">All Python Ethical Hacking courses...</h1>
+<table class="youtube">
+    <tr>
+        <th><a target=”blank” href="#"><button class="btn">GitHub Beginners (English)</button> </a> </th>
+        <th><a target=”blank” href="#"><button class="btn">GitHub Beginners (Hindi)</button> </a> </th>
+    </tr>
+</table>
+{% endblock %}
+{% block css %}
+<style>
+
+.brief-info {
+  transition-duration: 0.4s;
+  font-size: 15px;
+}
+
+.brief-info:hover {
+  background-color: #4CAF50; /* Gray */
+  color: white;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.course-head{
+    font-family: monospace;
+}
+
+.youtube{
+    padding: 10px;
+}
+</style>
+{% endblock %}

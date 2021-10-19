@@ -1,0 +1,51 @@
+{% extends 'base_2.html' %}
+{% block title %}
+Login
+{% endblock %}
+{% block content %}
+
+<form action="#" method="post" class="login">
+    <h1 class="head-login">Login</h1>
+    <input type="text" class="username" name="name-dark" placeholder="Username">
+    <br>
+    <br>
+    <input type="password" class="username" placeholder="Password">
+    <br>
+    <br>
+    <input type="submit" value="Login" class="sub-login">
+</form>
+
+{% endblock %}
+
+{% block css %}
+
+<style>
+    .login{
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .head-login{
+        font-family: monospace
+    }
+
+    .username{
+        font-size: 20px;
+    }
+
+    .sub-login{
+        font-size: 16px;
+        padding: 8px;
+        display: inline-block;
+        border-color: white;
+    }
+
+    .sub-login:hover{
+        cursor: pointer;
+        shadow: 10px;
+        background-opacity: 0.85;
+        border-opacity: 0.85;
+    }
+</style>
+
+{% endblock %}
